@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css",
+    "watch": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
   },
   "dependencies": {
     "next": "14.0.4",
